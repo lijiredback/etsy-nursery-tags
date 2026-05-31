@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Generate 13 Etsy tags for nursery wall art, printable baby room decor, and digital nursery prints. Free Etsy nursery wall art tags generator for sellers.">
+  <title>Free Etsy Nursery Wall Art Tags Generator</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #25221f;
+      --muted: #675f58;
+      --line: #dfd8d0;
+      --paper: #fffdfa;
+      --panel: #f7f1ea;
+      --accent: #28746b;
+      --accent-dark: #1f5a54;
+      --chip: #eef7f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 18px 56px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .tool {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+      gap: 20px;
+      align-items: start;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 12px;
+      color: var(--ink);
+      background: #fff;
+      font: inherit;
+    }
+
+    input:focus {
+      outline: 3px solid rgba(40, 116, 107, 0.18);
+      border-color: var(--accent);
+    }
+
+    button {
+      min-height: 44px;
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--accent);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-dark);
+    }
+
+    .copy-button {
+      width: 100%;
+      margin-top: 12px;
+      color: var(--accent-dark);
+      background: #fff;
+      border: 1px solid var(--accent);
+    }
+
+    .copy-button:hover {
+      color: #fff;
+      background: var(--accent-dark);
+    }
+
+    .output {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .output h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      min-height: 116px;
+      align-content: flex-start;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tags li {
+      max-width: 100%;
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: var(--accent-dark);
+      background: var(--chip);
+      border: 1px solid #d2e9e3;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    section {
+      margin-top: 36px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.55rem;
+      line-height: 1.15;
+    }
+
+    h3 {
+      margin: 20px 0 6px;
+      font-size: 1.05rem;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    ol,
+    ul {
+      padding-left: 22px;
+    }
+
+    .related {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .related li {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      color: var(--muted);
+      background: #fff;
+      font-weight: 800;
+    }
+
+    @media (max-width: 780px) {
+      main {
+        padding-top: 28px;
+      }
+
+      .tool,
+      .related {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>Free Etsy Nursery Wall Art Tags Generator</h1>
+      <p class="intro">Generate 13 Etsy tags for nursery wall art, printable baby room decor, baby room prints, and digital nursery wall art listings.</p>
+    </header>
+
+    <div class="tool" aria-label="Etsy nursery wall art tags generator">
+      <form id="tagForm">
+        <label>
+          Main subject
+          <input id="subject" name="subject" placeholder="rainbow, moon, daisy, safari animals, alphabet print">
+        </label>
+        <label>
+          Style
+          <input id="style" name="style" placeholder="boho, neutral, minimalist, watercolor, vintage">
+        </label>
+        <label>
+          Room / buyer
+          <input id="room" name="room" placeholder="nursery, baby girl room, baby boy room, gender neutral nursery">
+        </label>
+        <label>
+          Color
+          <input id="color" name="color" placeholder="beige, sage green, terracotta, blush pink, neutral">
+        </label>
+        <label>
+          Format
+          <input id="format" name="format" placeholder="printable wall art, digital download, set of 3 prints, instant download">
+        </label>
+        <button type="submit">Generate Etsy Tags</button>
+      </form>
+
+      <aside class="output" aria-live="polite">
+        <h2>Your 13 tags</h2>
+        <ul id="tags" class="tags">
+          <li>nursery wall art</li>
+          <li>printable nursery</li>
+          <li>baby room decor</li>
+          <li>digital nursery</li>
+        </ul>
+        <button id="copyAll" class="copy-button" type="button">Copy all</button>
+        <p class="note">Etsy allows 13 tags per listing. Use these as starting points for testing your listing, not as ranking guarantees.</p>
+        <p class="note">This tool creates quick tag ideas based on your inputs. Always review the tags before using them in your Etsy listing.</p>
+      </aside>
+    </div>
+
+    <section>
+      <h2>How to use these Etsy tags</h2>
+      <ol>
+        <li>Enter the core subject, visual style, buyer or room type, color, and product format.</li>
+        <li>Copy the generated tags into your Etsy listing tag fields.</li>
+        <li>Keep the most accurate tags first and remove any tag that does not match the actual print.</li>
+        <li>Test a few variations over time using your Etsy search analytics and listing performance.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <h3>How many Etsy tags can I use?</h3>
+      <p>Etsy listings can use up to 13 tags. This tool generates 13 ideas so you can fill the available tag slots quickly.</p>
+      <h3>Should every tag be under 20 characters?</h3>
+      <p>Etsy tags have a 20-character limit. This generator keeps tags short where possible, but you should still review each tag before publishing.</p>
+      <h3>Can these tags guarantee Etsy rankings?</h3>
+      <p>No. Tags are only one part of Etsy search. Your title, photos, listing quality, price, demand, competition, and customer behavior also matter.</p>
+      <h3>What if I sell a set of nursery prints?</h3>
+      <p>Include the format field, such as "set of 3 prints" or "digital download," so the generator can add product-format tag ideas.</p>
+    </section>
+
+    <section>
+      <h2>Related tools</h2>
+      <ul class="related">
+        <li>Boho Nursery Wall Art Tags Generator</li>
+        <li>Neutral Nursery Wall Art Tags Generator</li>
+        <li>Baby Girl Nursery Wall Art Tags Generator</li>
+        <li>Printable Wall Art Tags Generator</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const form = document.querySelector("#tagForm");
+    const tagsList = document.querySelector("#tags");
+    const copyButton = document.querySelector("#copyAll");
+
+    const fallbackValues = {
+      subject: "nursery",
+      style: "wall art",
+      room: "baby room",
+      color: "neutral",
+      format: "printable"
+    };
+
+    function normalize(value, fallback) {
+      return (value || fallback).toLowerCase().replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
+    }
+
+    function trimToLimit(tag) {
+      if (tag.length <= 20) return tag;
+      const clipped = tag.slice(0, 20);
+      const lastSpace = clipped.lastIndexOf(" ");
+      return (lastSpace > 8 ? clipped.slice(0, lastSpace) : clipped).trim();
+    }
+
+    function smartTrim(tag) {
+      let compact = tag
+        .replace(/\bwall art print\b/g, "wall art")
+        .replace(/\bdigital download\b/g, "digital")
+        .replace(/\binstant download\b/g, "instant")
+        .replace(/\bprintable wall art\b/g, "printable")
+        .replace(/\bgender neutral\b/g, "neutral")
+        .replace(/\bsafari animals\b/g, "safari")
+        .replace(/\balphabet print\b/g, "alphabet")
+        .replace(/\bnursery nursery\b/g, "nursery")
+        .replace(/\bprint print\b/g, "print")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      if (compact.length <= 20) return compact;
+
+      compact = compact
+        .replace(/\bfor\b/g, "")
+        .replace(/\broom\b/g, "")
+        .replace(/\bdecor\b/g, "")
+        .replace(/\bbaby girl\b/g, "girl")
+        .replace(/\bbaby boy\b/g, "boy")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      return trimToLimit(compact);
+    }
+
+    function uniqueTags(candidates) {
+      const seen = new Set();
+      const tags = [];
+      const backups = [
+        "nursery wall art",
+        "printable nursery",
+        "baby room decor",
+        "digital nursery",
+        "nursery prints",
+        "baby wall art",
+        "kids room decor",
+        "nursery download",
+        "printable art",
+        "baby room print",
+        "wall art nursery",
+        "nursery decor",
+        "instant download"
+      ];
+
+      candidates.concat(backups).forEach((candidate) => {
+        const tag = smartTrim(candidate);
+        if (tag && !seen.has(tag)) {
+          seen.add(tag);
+          tags.push(tag);
+        }
+      });
+
+      return tags.slice(0, 13);
+    }
+
+    function generateTags(data) {
+      const subject = normalize(data.get("subject"), fallbackValues.subject);
+      const style = normalize(data.get("style"), fallbackValues.style);
+      const room = normalize(data.get("room"), fallbackValues.room);
+      const color = normalize(data.get("color"), fallbackValues.color);
+      const format = normalize(data.get("format"), fallbackValues.format);
+
+      const candidates = [
+        `${subject} nursery`,
+        `${subject} wall art`,
+        `${style} nursery`,
+        `${style} wall art`,
+        `${room} decor`,
+        `${color} nursery`,
+        `${color} wall art`,
+        `${format}`,
+        `${format} nursery`,
+        `nursery printable`,
+        `baby room art`,
+        `nursery prints`,
+        `kids room decor`,
+        `${subject} print`,
+        `${style} print`,
+        `${color} print`,
+        `baby wall art`,
+        `digital nursery`,
+        `nursery download`
+      ];
+
+      return uniqueTags(candidates);
+    }
+
+    function renderTags(tags) {
+      tagsList.innerHTML = tags.map((tag) => `<li>${tag}</li>`).join("");
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      renderTags(generateTags(new FormData(form)));
+      if (window.plausible) {
+        window.plausible("Generate Tags");
+      }
+    });
+
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+
+      const helper = document.createElement("textarea");
+      helper.value = text;
+      helper.setAttribute("readonly", "");
+      helper.style.position = "fixed";
+      helper.style.left = "-999px";
+      document.body.appendChild(helper);
+      helper.select();
+      document.execCommand("copy");
+      helper.remove();
+      return Promise.resolve();
+    }
+
+    copyButton.addEventListener("click", async () => {
+      const tags = [...tagsList.querySelectorAll("li")].map((tag) => tag.textContent).join(", ");
+      await copyText(tags);
+      copyButton.textContent = "Copied";
+      if (window.plausible) {
+        window.plausible("Copy Tags");
+      }
+      window.setTimeout(() => {
+        copyButton.textContent = "Copy all";
+      }, 1400);
+    });
+
+    renderTags(generateTags(new FormData(form)));
+  </script>
+</body>
+</html>
