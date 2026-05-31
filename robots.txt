@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etsy-nursery-tags.vercel.app/sitemap.xml
